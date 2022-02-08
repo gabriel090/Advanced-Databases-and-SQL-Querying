@@ -1,0 +1,13 @@
+--Computed columns are computed based on other columns
+--is computed from an expression that can use other column in the same table
+--can be a noncomputed column name, function with one or more operators
+-- cannot be a subquery
+-- cannot be used as  a DEFAULT or FOREIGN KEY constaint definition or with a 
+--NOT Null constraint definition
+
+--used as CHECK, FOREIGN KEY, or NOT NULL constraints must be marked PERSISTED
+--cannot be the target of an INSERT or UPDATE statement.
+-- Its a virtual column that computes its values from an expression,
+-- we can use constant value, function, value derived from other column, non-computed column name,
+-- or their combination
+
